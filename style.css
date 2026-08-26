@@ -466,5 +466,23 @@ footer {
     .section {
         padding: 70px 25px;
     }
+    
+#botaoCurtir {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    background-color: #8b3fa3;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
 
+#botaoCurtir:hover {
+    transform: scale(1.05);
+}
+
+#botaoCurtir:active {
+    transform: scale(0.95);
+}
 }
