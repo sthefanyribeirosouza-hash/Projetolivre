@@ -15,8 +15,8 @@ function responder(resposta) {
             "❌ Pense novamente! A homofobia pode aparecer de diversas formas, não apenas por meio de violência física.";
 
         resultado.style.color = "red";
-
     }
+}
 // BOTÃO DE CURTIR
 let curtidas = 0;
 
