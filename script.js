@@ -17,5 +17,12 @@ function responder(resposta) {
         resultado.style.color = "red";
 
     }
+// BOTÃO DE CURTIR
+let curtidas = 0;
 
+function curtir() {
+    curtidas++;
+
+    document.getElementById("contador").textContent = curtidas;
+    }
 }
