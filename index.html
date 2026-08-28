@@ -56,10 +56,19 @@
     </p>
 
     <!-- BOTÃO DE CURTIR -->
-    <button>❤️<span>0</span></button>
-<button>👍<span>0</span></button>
-</div>
-</article>
+ function botaoClicado() {
+console.log("fui clicado");
+let texto = botao.querySelector("span");
+
+if (curtiu === false) {
+texto.textContent++;
+curtiu = true;
+} else {
+texto.textContent--;
+curtiu = false;
+}
+}
+
 
             </section>
 
