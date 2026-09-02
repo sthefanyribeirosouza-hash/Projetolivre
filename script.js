@@ -1,29 +1,17 @@
-function responder(resposta) {
+const botoes = document.querySelectorAll("button");
 
-    const resultado = document.getElementById("resultado");
-
-    if (resposta === true) {
-
-        resultado.innerHTML =
-            "✅ Correto! A homofobia não acontece apenas por meio de violência física. Ela também pode aparecer em palavras, atitudes, exclusão, discriminação e violência psicológica.";
-
-        resultado.style.color = "green";
-
-    } else {
-
-        resultado.innerHTML =
-            "❌ Pense novamente! A homofobia pode aparecer de diversas formas, não apenas por meio de violência física.";
-
-        resultado.style.color = "red";
+botoes.forEach(function (botao) {
+    let curtiu = false;
+    botao.addEventListener("click", botaoClicado);
+    function botaoClicado() {
+        console.log("fui clicado");
+        let texto = botao.querySelector("span");
+        if (curtiu === false) {
+            texto.textContent++;
+            curtiu = true;
+        } else {
+            texto.textContent--;
+            curtiu = false;
+        }
     }
-}
-
-// BOTÃO DE CURTIR
-let curtidas = 0;
-
-function curtir() {
-    curtidas++;
-
-    document.getElementById("contador").textContent = curtidas;
-    }
-}
+});
